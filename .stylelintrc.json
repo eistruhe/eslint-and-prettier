@@ -21,8 +21,7 @@
     "no-extra-semicolons": true,
     "property-case": "lower",
     "rule-empty-line-before": [
-      "always",
-      {
+      "always", {
         "except": ["inside-block-and-after-rule", "first-nested"]
       }
     ],
