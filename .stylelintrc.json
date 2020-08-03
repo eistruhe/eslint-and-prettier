@@ -1,14 +1,34 @@
 {
-  "extends": "stylelint-config-standard",
-  "plugins": ["stylelint-prettier"],
   "rules": {
-    "prettier/prettier": true,
     "string-quotes": "single",
     "rule-empty-line-before": [
       "always",
       {
         "except": ["inside-block-and-after-rule", "first-nested"]
       }
-    ]
+    ],
+    "max-empty-lines": 2,
+    "indentation": 2,
+    "no-extra-semicolons": true,
+    "declaration-block-trailing-semicolon": "always",
+    "declaration-block-semicolon-space-before": "never",
+    "block-closing-brace-newline-before": "always",
+    "block-opening-brace-newline-after": "always",
+    "selector-list-comma-newline-after": "always",
+    "selector-list-comma-newline-before": "never-multi-line",
+    "declaration-block-no-duplicate-properties": true,
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "function-url-quotes": "always",
+    "unit-case": "lower",
+    "property-case": "lower",
+    "declaration-bang-space-before": "always",
+    "declaration-bang-space-after": "never",
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-empty-line-before": "never"
   }
 }

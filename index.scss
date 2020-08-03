@@ -19,7 +19,16 @@ $spacers: map-merge(
 .text {
   color: red;
   font-family: 'Arial';
+
+  span {
+    color: blue !important;
+
+    em {
+      color: red;
+    }
+  }
 }
+
 .text2,
 .text3 {
   color: red;

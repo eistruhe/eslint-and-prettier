@@ -5,19 +5,10 @@
   // Formats documents on save
   "editor.formatOnSave": true,
 
-  // Turn it off for JS and HTML
+  // Turn it off for JS
   "[javascript]": {
     "editor.formatOnSave": false
   },
-  "[html]": {
-    "editor.formatOnSave": false,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": false
-    }
-  },
-
-  // Optional: If you have the Prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already
-  "prettier.disableLanguages": ["js"],
 
   // Tell the ESLint plugin to run on save
   "editor.codeActionsOnSave": {
@@ -30,10 +21,22 @@
   "eslint.alwaysShowStatus": true,
 
   // Prettier SCSS
-  // "prettier.singleQuote": true,
-  // "prettier.trailingComma": "all",
+  // Turn it off for CSS, Less, SCSS
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "[scss]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "editor.formatOnSave": false,
+  },
+
+  // Turn it off for HTML
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": false
+    }
+  },
+
+  // Disable Prettier for the following languages
+  "prettier.disableLanguages": ["js", "scss"]
 }
