@@ -1,0 +1,39 @@
+{
+  // Activate ESLint
+  "eslint.enable": true,
+
+  // Formats documents on save
+  "editor.formatOnSave": true,
+
+  // Turn it off for JS and HTML
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": false
+    }
+  },
+
+  // Optional: If you have the Prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through ESLint already
+  "prettier.disableLanguages": ["js"],
+
+  // Tell the ESLint plugin to run on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true,
+    "source.organizeImports": false
+  },
+
+  "eslint.alwaysShowStatus": true,
+
+  // Prettier SCSS
+  // "prettier.singleQuote": true,
+  // "prettier.trailingComma": "all",
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -1,0 +1,26 @@
+/* prettier-ignore */
+$spacers: map-merge(
+  (
+    0: 0,
+    10: ($spacer * 10),
+    20: ($spacer * 20),
+    30: ($spacer * 30),
+    40: ($spacer * 40),
+    50: ($spacer * 50),
+    60: ($spacer * 60),
+    70: ($spacer * 70),
+    80: ($spacer * 80),
+    90: ($spacer * 90),
+    100: ($spacer * 100)
+  ),
+  $spacers
+);
+
+.text {
+  color: red;
+  font-family: 'Arial';
+}
+.text2,
+.text3 {
+  color: red;
+}

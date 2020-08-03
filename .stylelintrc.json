@@ -1,0 +1,14 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-prettier"],
+  "rules": {
+    "prettier/prettier": true,
+    "string-quotes": "single",
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["inside-block-and-after-rule", "first-nested"]
+      }
+    ]
+  }
+}
