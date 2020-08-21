@@ -22,7 +22,7 @@
     "property-case": "lower",
     "rule-empty-line-before": [
       "always", {
-        "except": ["inside-block-and-after-rule", "first-nested"]
+        "except": ["first-nested"]
       }
     ],
     "selector-list-comma-newline-after": "always",
