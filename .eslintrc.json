@@ -16,6 +16,7 @@
       {
         "allowAllPropertiesOnSameLine": true
       }
-    ]
+    ],
+    "no-underscore-dangle": "off"
   }
 }
