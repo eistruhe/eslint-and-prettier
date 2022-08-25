@@ -1,42 +1,38 @@
 {
-  // Activate ESLint
-  "eslint.enable": true,
-
-  // Formats documents on save
-  "editor.formatOnSave": true,
-
-  // Turn it off for JS
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-
-  // Tell the ESLint plugin to run on save
-  "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true,
-    "source.organizeImports": false
-  },
-
-  "eslint.alwaysShowStatus": true,
-
-  // Prettier SCSS
-  // Turn it off for CSS, Less, SCSS
+  // Validations
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "[scss]": {
-    "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Formats documents on save
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
   },
 
-  // Turn it off for HTML
+  // ESLint
+  "eslint.format.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {
+    "extensions": [".html", ".js", ".vue", ".jsx"]
+  },
+
+  // Pettier
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+
+  // Language specifics
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": {
       "source.fixAll.stylelint": false
     }
-  },
-
-  // Disable Prettier for the following languages
-  "prettier.disableLanguages": ["js", "scss"]
+  }
 }

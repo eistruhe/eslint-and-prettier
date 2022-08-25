@@ -1,8 +1,7 @@
 {
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "extends": ["airbnb"],
   "rules": {
-    "prettier/prettier": ["error"],
+    "quotes": ["error", "single"],
     "no-unused-vars": "warn",
     "no-console": "off",
     "func-names": "off",
@@ -17,6 +16,8 @@
         "allowAllPropertiesOnSameLine": true
       }
     ],
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "array-element-newline": ["error", { "multiline": true }],
+    "multiline-ternary": ["error", "never"]
   }
 }
